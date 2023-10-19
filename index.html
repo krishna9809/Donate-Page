@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/Logo_Donation.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Donation Page</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="nav">
+            <div class="nav-logo">
+                <img src="image/Logo_Donation.png" alt="">
+            </div>
+            <div class="nav-items">
+             <div class="nav-text">Events</div>
+             <div class="nav-text">Gallery</div>
+             <div class="nav-text">Contact Us</div>
+            </div>
+        </div>
+
+        <div class="main-box">
+            <div class="left-side">
+                <h1 class="main-head1">
+                    Always give without 
+                </h1>
+                <h1 class="main-head2">
+                    Remembering and always 
+                </h1> 
+                <h1 class="main-head3">
+                 Recieve without forgetting.
+                </h1>
+            </div>
+            <div class="right-side">
+                <div class="container">
+                    <h2 style="font-size: 3rem;">Donation Payment</h2>
+                    <form action="process_donation.php" method="POST">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required>
+            
+                        <label for="amount">Donation Amount:</label>
+                        <input type="number" id="amount" name="amount" required>
+            
+                        <label for="currency">Currency:</label>
+                        <select id="currency" name="currency" required>
+                            <option value="USD">USD</option>
+                            <option value="RUPEE">RUPEE</option>
+                            <option value="GBP">GBP</option>
+                            <!-- Add more currency options as needed -->
+                        </select>
+                        <div class="gateway">
+                        <button type="submit">Donate Now</button>
+                        <div class="gateway-img">
+                            <img src="image/Payment-Gatway.png" alt="">
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+        
+            <div class="footer-logo">
+                <img src="image/Logo_Donation.png" alt="Website Logo">
+            </div>
+            <div class="footer-links">
+                
+                    <div><a href="#">Help Centre</a></div>
+                    <div><a href="#">About Donate</a></div>
+                    <div><a href="#">Feedback</a></div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+    </div>
+
+
+    </div>
+</body>
+</html>
